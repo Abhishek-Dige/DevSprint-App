@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Fight_the_randomness"
+rootProject.name = "fight_the_randomness"
 include(":app")
+ 
