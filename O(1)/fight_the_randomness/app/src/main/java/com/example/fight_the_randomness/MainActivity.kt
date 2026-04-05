@@ -204,7 +204,7 @@ fun RandomnessJourney(modifier: Modifier = Modifier) {
                         currentAvatar = R.drawable.kanye
                         step = 5
                     }
-                }) { Text("Submit Answer") }
+                }) { Text("Wheres the question?") }
 
                 5 -> Button(onClick = {
                     fetchData("https://api.adviceslip.com/advice", "") {
