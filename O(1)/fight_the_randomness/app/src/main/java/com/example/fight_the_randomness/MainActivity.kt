@@ -178,11 +178,11 @@ fun RandomnessJourney(modifier: Modifier = Modifier) {
 
                 2 -> Button(onClick = {
                     fetchData("https://geek-jokes.sameerkumar.website/api?format=json", "joke") {
-                        mainText = "Rick & Morty: $it"
+                        mainText = "Rick enters the scene..: $it"
                         currentAvatar = R.drawable.rick // Change to your drawable name
                         step = 3
                     }
-                }) { Text("Whatever...") }
+                }) { Text("Whatever...gimme something interesting") }
 
                 3 -> Button(onClick = {
                     fetchData("https://opentdb.com/api.php?amount=1", "") {
@@ -208,20 +208,20 @@ fun RandomnessJourney(modifier: Modifier = Modifier) {
 
                 5 -> Button(onClick = {
                     fetchData("https://api.adviceslip.com/advice", "") {
-                        mainText = "Drunk Man: \"$it\""
+                        mainText = "Drunk Man's life changing advice...: \"$it\""
                         resultImageUrl = ""
                         currentAvatar = R.drawable.drunk_guy // Change to your drawable name
                         step = 6
                     }
-                }) { Text("Meet the Drunk Man") }
+                }) { Text("okay..?") }
 
                 6 -> Button(onClick = {
                     fetchData("https://yesno.wtf/api", "") {
                         resultImageUrl = it
-                        mainText = "THE ULTIMATE TRUTH!"
+                        mainText = "SEE THE PRIZEEE..."
                         step = 7
                     }
-                }) { Text("THE FINAL SURPRISE") }
+                }) { Text("THE FINAL SURPRISE(yeeeeeeee)") }
 
                 7 -> Button(onClick = {
                     step = 0; resultImageUrl = ""; userGuess = ""
